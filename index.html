@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TT-front-end</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Country Array</h1>
+      <div class="row">
+        <div class="col">
+          <div class="card card-body">
+            <input
+              id="searchBar"
+              name="searchBar"
+              class="form-control"
+              type="text"
+              placeholder="search a country"
+            />
+          </div>
+        </div>
+      </div>
+      <table class="table table-striped">
+        <tr class="bg-info">
+          <th data-column="name" data-order="desc">Name</th>
+          <th data-column="capital" data-order="desc">Capital</th>
+          <th data-column="population" data-order="desc">Population</th>
+          <th data-column="region" data-order="desc">Region</th>
+          <th data-column="currencie" data-order="desc">Currencie</th>
+          <th data-column="area" data-order="desc">Area</th>
+        </tr>
+        <tbody id="myTable"></tbody>
+      </table>
+    </div>
+  </body>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <script src="js/hometask.js"></script>
+  <script src="js/app.js"></script>
+</html>
