@@ -10008,7 +10008,7 @@ const countries = [
     alpha2Code: 'UA',
     alpha3Code: 'UKR',
     callingCodes: ['380'],
-    capital: 'Kiev',
+    capital: 'Kyiv',
     altSpellings: ['UA', 'Ukrayina'],
     region: 'Europe',
     subregion: 'Eastern Europe',
