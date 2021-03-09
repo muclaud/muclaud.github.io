@@ -16503,7 +16503,7 @@ textarea.form-control-lg {
   .sidebar .nav {
     white-space: nowrap; }
   .sidebar .nav-item {
-    margin-bottom: .2rem; }
+    margin-bottom: 0.2rem; }
     .sidebar .nav-item.active > .nav-link {
       color: #D1D5DB;
       background-color: #2e3650; }
@@ -16514,20 +16514,20 @@ textarea.form-control-lg {
         color: #D1D5DB;
         background-color: #2e3650; }
   .sidebar .nav-link + .multi-level {
-    margin-top: .2rem; }
+    margin-top: 0.2rem; }
   .sidebar .nav-link {
     font-size: 1rem;
     vertical-align: middle;
     padding: 0.55rem 0.75rem;
     border-radius: 1rem; }
     .sidebar .nav-link .sidebar-icon {
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       color: #ffffff; }
       .sidebar .nav-link .sidebar-icon span {
         min-width: 22px; }
     .sidebar .nav-link .link-arrow {
       font-size: 0.875rem; }
-    .sidebar .nav-link[data-bs-toggle=collapse][aria-expanded=true] .link-arrow {
+    .sidebar .nav-link[data-bs-toggle="collapse"][aria-expanded="true"] .link-arrow {
       transform: rotate(90deg);
       transition: all 0.2s ease; }
   .sidebar .nav-link.active {
@@ -16552,7 +16552,7 @@ textarea.form-control-lg {
   overflow-y: hidden; }
 
 .sidebar-heading {
-  font-size: .75rem;
+  font-size: 0.75rem;
   text-transform: uppercase; }
 
 .user-card {
@@ -16571,7 +16571,7 @@ textarea.form-control-lg {
       transition: none; } }
   @media (min-width: 768px) {
     .content {
-      margin-left: 260px; } }
+      margin-left: 120px; } }
 
 .sidebar-toggle {
   font-size: 1.3rem; }

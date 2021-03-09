@@ -7,13 +7,19 @@ export class StarshipsList extends Component {
         let starshipsContent = "";
         starships.forEach((starship) => {
             starshipsContent += `
-            <div class="card-body">
-              <h5 class="Name: ${starship.name}</h5>
-              <p class="card-text">Passengers: ${starship.passengers}</p>
-              <p class="card-text">Crew: ${starship.crew}</p>
-              <p class="card-text">Length: ${starship.length}</p>
-              <p class="card-text">Manufacturer: ${starship.manufacturer}</p>
-              <a href="${starship.url}" class="btn btn-primary">Detailes</a>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">${starship.name}</h5>
+                        <p class="card-text">Passengers: ${starship.passengers}</p>
+                        <p class="card-text">Crew: ${starship.crew}</p>
+                        <p class="card-text">Length: ${starship.length}</p>
+                        <p class="card-text">Manufacturer: ${starship.manufacturer}</p>
+                    </div>
+                    <div class="card-footer"> 
+                        <a href="${starship.url}" class="btn btn-primary">    Detailes    </a>
+                    </div>
+                </div>
             </div>`
         });
         this.updateContent(starshipsContent)

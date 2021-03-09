@@ -1,4 +1,15 @@
-import { createFilmsList, createPeopleList, createSpeciesList, createStarshipsList, createVehiclesList, createPlanetsList } from "./controller/content.js"
+import { filmsListInner } from "./controller/films.js"
+import { planetListInner } from "./controller/planet.js"
+import { peopleListInner } from "./controller/people.js"
+import { speciesListInner } from "./controller/species.js"
+import { starshipsListInner } from "./controller/starships.js"
+import { vehiclesListInner } from "./controller/vehicles.js"
+
+function renderContent(datalist) {
+    let changeContainer = document.getElementById("activeContent");
+    let newContent = datalist;
+    return changeContainer.innerHTML = newContent.innerHTML
+}
 
 
 const menuContainer = document.getElementById("submenu-components");
@@ -11,22 +22,22 @@ menuItems.forEach((menuItem) => {
                 targ = e.target.parentElement}
         let btnComponent = targ.parentElement.dataset.component
         if (btnComponent === "people") {
-            createPeopleList()
+            renderContent(peopleListInner)
 
         } else if (btnComponent === "planets") {
-            createPlanetsList()
+            renderContent(planetListInner)
 
         } else if (btnComponent === "films") {
-            createFilmsList()
+            renderContent(filmsListInner)
             
         } else if (btnComponent === "vehicles") {
-            createVehiclesList()
+            renderContent(vehiclesListInner)
 
         } else if (btnComponent === "starships") {
-            createStarshipsList()
+            renderContent(starshipsListInner)
 
         } else if (btnComponent === "species") {
-            createSpeciesList()
+            renderContent(speciesListInner)
         }
     })
 })
