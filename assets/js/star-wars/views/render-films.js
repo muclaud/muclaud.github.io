@@ -3,7 +3,7 @@ import { Component } from "../helpers/components.js";
 
 export class FilmsList extends Component {
     constructor(films) {
-        super ({elementType: "div", className: "row row-cols-xs-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4"})
+        super ({elementType: "div", className: "card"})
         let filmsContent = "";
         films.forEach((film) => {
             filmsContent += `
