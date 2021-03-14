@@ -10,9 +10,8 @@ const createFilmsList = () => {
     });
 };
 
-export const filmsListInner = await createFilmsList() 
 
-
+export const filmsListInner = await createFilmsList()
 
 
 
