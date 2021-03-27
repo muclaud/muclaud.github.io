@@ -1,12 +1,11 @@
 import { Component } from "../helpers/components.js";
 
-
 export class SpeciesList extends Component {
-    constructor(species) {
-        super ({elementType: "div", className: "card"})
-        let speciesContent = "";
-        species.forEach((specie) => {
-            speciesContent += `
+  constructor(species) {
+    super({ elementType: "div", className: "card" });
+    let speciesContent = "";
+    species.forEach((specie) => {
+      speciesContent += `
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
@@ -16,12 +15,9 @@ export class SpeciesList extends Component {
                         <p class="card-text">Average lifespan: ${specie.average_lifespan}</p>
                         <p class="card-text">Designation: ${specie.designation}</p>
                     </div>
-                    <div class="card-footer"> 
-                        <a href="${specie.url}" class="btn btn-primary">    Detailes    </a>
-                    </div>
                 </div>
-            </div>`
-        });
-        this.updateContent(speciesContent)
-    }
+            </div>`;
+    });
+    this.updateContent(speciesContent);
+  }
 }

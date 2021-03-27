@@ -1,12 +1,11 @@
 import { Component } from "../helpers/components.js";
 
-
 export class StarshipsList extends Component {
-    constructor(starships) {
-        super ({elementType: "div", className: "card"})
-        let starshipsContent = "";
-        starships.forEach((starship) => {
-            starshipsContent += `
+  constructor(starships) {
+    super({ elementType: "div", className: "card" });
+    let starshipsContent = "";
+    starships.forEach((starship) => {
+      starshipsContent += `
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
@@ -16,12 +15,9 @@ export class StarshipsList extends Component {
                         <p class="card-text">Length: ${starship.length}</p>
                         <p class="card-text">Manufacturer: ${starship.manufacturer}</p>
                     </div>
-                    <div class="card-footer"> 
-                        <a href="${starship.url}" class="btn btn-primary">    Detailes    </a>
-                    </div>
                 </div>
-            </div>`
-        });
-        this.updateContent(starshipsContent)
-    }
+            </div>`;
+    });
+    this.updateContent(starshipsContent);
+  }
 }
